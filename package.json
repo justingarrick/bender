@@ -5,6 +5,7 @@
   "author": "Justin Garrick",
   "description": "Swarthy Latin Charm",
   "dependencies": {
+    "heroku-client": "^1.10.2",
     "hubot": "^2.12.0",
     "hubot-help": "^0.1.1",
     "hubot-heroku-keepalive": "0.0.4",

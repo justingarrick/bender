@@ -1,0 +1,7 @@
+#! /app/bin/node
+var Heroku = require('heroku-client');
+var heroku = new Heroku({ token: process.env.HEROKU_API_TOKEN });
+var app = heroku.apps('bender-slackbot');
+app.formation().list(function (err, formations) {
+  console.log(formations);
+});
