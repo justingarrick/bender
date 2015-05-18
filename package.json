@@ -2,7 +2,7 @@
   "name": "bender",
   "version": "0.0.0",
   "private": true,
-  "author": "Justin Garrick <justingarrick@gmail.com>",
+  "author": "Justin Garrick",
   "description": "Swarthy Latin Charm",
   "dependencies": {
     "hubot": "^2.12.0",
