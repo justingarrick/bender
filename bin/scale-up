@@ -2,6 +2,6 @@
 var Heroku = require('heroku-client');
 var heroku = new Heroku({ token: process.env.HEROKU_API_TOKEN });
 var app = heroku.apps('bender-slackbot');
-app.formation().batchUpdate({"process":"web", "quantity":1, "size":"free"}, function (err, callback) {
+app.formation().batchUpdate({"process":"web", "quantity":1, "size":"Free"}, function (err, callback) {
   console.log(callback);
 });
