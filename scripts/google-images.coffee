@@ -18,6 +18,7 @@ module.exports = (robot) ->
 
   robot.respond /(image|img)( me)? (.+)/i, (msg) ->
     imageMe msg, msg.match[3], (url) ->
+      console.log url
       msg.send url
 
   robot.respond /animate( me)? (.+)/i, (msg) ->
