@@ -91,3 +91,4 @@ parseHTML = (html, selector) ->
 
 strCapitalize = (str) ->
   return str.charAt(0).toUpperCase() + str.substring(1);
+

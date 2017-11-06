@@ -1,7 +1,0 @@
-#!/app/.heroku/node/bin/node
-var Heroku = require('heroku-client');
-var heroku = new Heroku({ token: process.env.HEROKU_API_TOKEN });
-var app = heroku.apps(process.env.APP_NAME);
-app.formation().batchUpdate({"updates":[{"process":"web", "quantity":1, "size":"Free"}]}, function (err, callback) {
-  console.log(callback);
-});
